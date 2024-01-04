@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Google</title>
+  <script src="script.js" defer></script> 
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+      </ul>
+      <ul class="right">
+        <li>
+          <a href="#" class="dropdown">Gmail</a>
+          <ul class="dropdown-content">
+            <li><a href="#inbox">Inbox</a></li>
+            <li><a href="#spam">Spam</a></li>
+            <li><a href="#read">Read</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown">Images</a>
+          <ul class="dropdown-content">
+            <li><a href="#jpg">JPG</a></li>
+            <li><a href="#png">PNG</a></li>
+            <li><a href="#gif">GIF</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="dropdown">More</a>
+          <ul class="dropdown-content">
+            <li><a href="#history">History</a></li>
+            <li><a href="#cache">Cache data</a></li>
+            <li><a href="#more options">More Options</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sign in</a></li>
+        <!-- Inside the <li> containing the profile picture -->
+       <li class="dropdown">
+        <img src="images/profile.png" alt="Profile Picture" class="profile-pic" />
+           <ul class="dropdown-content profile-dropdown">
+            <li><a href="#">xyz12345@gmail.com</a></li>
+            <li><a href="#">Manage Accounts</a></li>
+            <li><a href="#">Switch account</a></li>
+            <li><a href="#">Change Profile pic</a></li>
+            <li><a href="#">Log out</a></li>
+  </ul>
+</li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-wrapper">
+    <img class="logo" src="images/logo.png" alt="Google Logo" />
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search Google or type a URL" />
+      <img class="search-icon" src="images/search.png" alt="Search Icon" />
+      <img class="mic-icon" src="images/mic.png" alt="Microphone Icon" />
+    </div>
+  </section>
+  <div class="buttons search-buttons">
+    <button id="search-button">Google Search</button>
+    <button id="lucky-button">I'm Feeling Lucky</button>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+      </ul>
+      <p><img class="leaf" src="images/leaf.jpeg" alt="Leaf Icon" /> Carbon neutral since 2007</p>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
+<div class="popup-card" id="popupCard">
+  <p>Button clicked
+    (click again to close).</p>
+  <!-- Customize the content as needed -->
+</div>

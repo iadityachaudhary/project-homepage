@@ -1,0 +1,299 @@
+/* Reset styles and global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Body styles */
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/* Link styles */
+li {
+    text-align: center;
+    padding: 14px 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Small text styles */
+.small-text {
+    margin-right: 10px;
+}
+
+/* Menu button styles */
+.menu-bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.menu-bg:hover {
+    background-color: rgba(100, 100, 100, 0.1);
+    cursor: pointer;
+}
+
+.menu-button {
+    width: 15px;
+}
+
+/* Profile pic styles */
+.profile-pic {
+    border-radius: 5%;
+    width: 10%;
+}
+
+/* Search wrapper styles */
+.search-wrapper {
+    height: 45%; /* Rule 1: Google icon and search bar at a height of 45% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Form and input styles */
+form {
+    position: relative;
+    margin-top: 30px;
+}
+
+input {
+    width: 580px;
+    height: 45px;
+    padding-left: 50px;
+    font-size: 1.2rem;
+    border-radius: 45px;
+    border: 1px solid #d3d3d3;
+    position: relative; /* Adjusted positioning */
+}
+
+input:hover {
+    box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+}
+
+/* Search and mic icon styles */
+.search-icon,
+.mic-icon {
+    position: absolute;
+    top: 68%;
+    transform: translateY(-50%);
+    width: 15px; /* Adjusted width for the icons */
+    height: 20px; /* Adjusted height for the icons */
+    cursor: pointer;
+}
+.search-icon.clicked, .mic-icon.clicked {
+    filter: brightness(0.8);
+  }
+
+.search-icon {
+    left: 370px; /* Adjusted left position for the search icon */
+}
+
+.mic-icon {
+    right: 380px; /* Adjusted right position for the mic icon */
+}
+
+/* Buttons styles */
+.buttons.search-buttons {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1px; /* Rule 2: Buttons just under the search bar with some spacing */
+}
+
+/* ... (previous styles remain unchanged) */
+
+/* Dropdown styles */
+
+/* ... (previous styles remain unchanged) */
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px 0; /* Adjust padding as needed */
+    text-align: center; /* Center the content horizontally */
+    position: absolute; /* Position the footer at the bottom */
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Adjustments for left and right lists */
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul.left {
+    text-align: left;
+}
+
+.footer-content ul.right {
+    text-align: right;
+}
+
+/* Additional styles for center content */
+.footer-content p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    margin-top:0 ;
+}
+
+/* Specific adjustments for the footer links */
+.footer-content ul.left li,
+.footer-content ul.right li {
+    display: inline-block;
+    margin-right: 15px; /* Adjust the spacing between items */
+}
+
+/* Additional adjustments for specific elements */
+.footer-content ul.right {
+    flex-grow: 1;
+}
+
+.footer-content p {
+    margin-left: 15px; /* Adjust the spacing between the center content and the right content */
+}
+.leaf {
+    width: 25px; /* Adjusted width for the leaf icon */
+    height: 18px; /* Adjusted height for the leaf icon */
+    margin-right: 2px; /* Adjust the spacing between the leaf icon and text */
+    margin-top: 15px;
+}
+/* Profile pic styles */
+/* Profile pic styles */
+.profile-pic {
+    border-radius: 50%; /* Optional: Apply a border-radius for a circular profile picture */
+    width: 30px; /* Adjust the width of the profile picture */
+    height: 30px; /* Adjust the height of the profile picture */
+    margin-right: 3px; /* Adjust the spacing between profile pic and "Sign in" button */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the spacing between "Sign in" and profile pic */
+.right li:last-child {
+    margin-left: 5px;
+}
+
+/* Dropdown styles */
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #151515;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px; /* Adjust the radius as needed */
+    border: 1px solid #cccccc; /* Add a border with your preferred color */
+}
+
+.dropdown-content a {
+    color: rgb(235, 228, 228);
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+/* Add this CSS to your existing styles.css file */
+.popup-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #e4a6a6;
+    border: 1px solid #0e0101;
+    box-shadow: 0 0 10px rgba(43, 165, 49, 0.1);
+    z-index: 1000;
+  }
+  .popup-card {
+    /* ... other styles ... */
+    font-weight: bold;
+    color: hsl(0, 88%, 10%); /* Set your desired text color */
+  }
+  
+  .popup-card.show {
+    display: block;
+  }
+
+  /* Add this CSS snippet to your existing styles.css */
+/* Add this CSS snippet to your existing styles.css */
+.profile-dropdown {
+    position: absolute;
+    background-color: #151515;
+    min-width: 120px; /* Adjust the minimum width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px; /* Adjust the radius as needed */
+    border: 1px solid #ccc; /* Add a border with your preferred color */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    right: 0; /* Align to the right */
+    margin-right: 10px; /* Add margin on the right */
+}
+
+.profile-dropdown a {
+    color: rgb(235, 228, 228);
+    padding: 8px 12px; /* Adjust padding to decrease the overall size */
+    text-decoration: none;
+    display: block;
+}
+
+/* Style to make the dropdown appear on hover */
+.dropdown:hover .profile-dropdown {
+    display: block;
+}
+
+  
+  
